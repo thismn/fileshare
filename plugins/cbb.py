@@ -10,7 +10,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ Creator : This Person\n○ Language : <code>Python3</code>\n○ Channel : [Channel](https://t.me/yaagtau)\n○ Source Code : <a href='https://github.com'>Click here</a></b>",
+            text = f"<b>○ Creator : This Person\n○ Language : <code>Python3</code>\n○ Channel : <a href='https://t.me/yaagtau'>Channel</a>\n○ Source Code : <a href='https://github.com'>Click here</a></b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
